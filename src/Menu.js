@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
+import './Menu.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
-function App() {
+function Menu() {
   return (
     <div className="App">
       <head>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Menu;
