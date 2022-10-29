@@ -1,12 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
 
 import Menu from './pages/Menu/menu';
 
-export default function Routes() {
+const Rotas = () => {
    return (
       <BrowserRouter>
-         <Route path="/" exact component={Menu} />
+         <Routes>
+            <Route exact path='/' element={<Menu/>} />
+         </Routes>
       </BrowserRouter>
    );
 }
+export default Rotas;
