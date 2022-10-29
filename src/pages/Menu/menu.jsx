@@ -1,9 +1,12 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, li } from 'react';
+import { Link } from 'react-router-dom';
 import './menu.css';
 
 function Menu() {
    return (
-      <h1>TESTE</h1>
+      <section>
+         <h1><span>HOME</span></h1>
+      </section>
    );
 }
 export default Menu;

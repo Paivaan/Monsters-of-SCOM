@@ -1,0 +1,12 @@
+.container {
+   width: '100%';
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   flex-wrap: wrap;
+   background-color: aqua;
+}
+
+.min-height {
+   min-height: '75%';
+}
