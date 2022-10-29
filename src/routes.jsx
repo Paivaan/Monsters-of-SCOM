@@ -6,9 +6,7 @@ import Menu from './pages/Menu/menu';
 export default function Routes() {
    return (
       <BrowserRouter>
-         <Switch>
-            <Route path="/" exact component={Menu} />
-         </Switch>
+         <Route path="/" exact component={Menu} />
       </BrowserRouter>
    );
 }
