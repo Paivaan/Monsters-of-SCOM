@@ -1,6 +1,11 @@
 .footer {
    background-color: blueviolet;
    color: white;
-   padding: 3em;
+   padding: 1em;
    text-align: center;
+
+}
+
+.list{
+   list-style: none;
 }
