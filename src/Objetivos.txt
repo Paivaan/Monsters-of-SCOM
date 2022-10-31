@@ -1,9 +1,13 @@
 Especificações do T1:
 -Trabalho em grupo até 4 pessoas
+
 -Desenvolver um site usando HTML, CSS, PHP e Javascript apresentando um mundo
--Entrega: todo código do site (incluindo qualquer arquivo necessário para que ele seja plenamente hospedado em um servidor local) + relatório (de 4 a 8 páginas) descrevendo o processo de desenvolvimento do site, suas funcionalidades, as dificuldades encontradas na elaboração do trabalho e as soluções encontradas para contorná-las, além de listar todas as bibliotecas utilizadas
+-Entrega: todo código do site (incluindo qualquer arquivo necessário para que ele seja plenamente hospedado em um servidor local) + relatório (de 4 a 8 páginas)
+   descrevendo o processo de desenvolvimento do site, suas funcionalidades, as dificuldades encontradas na elaboração do trabalho e as soluções encontradas para
+   contorná-las, além de listar todas as bibliotecas utilizadas
 -Mínimo de telas: 3
--Mínimo de funcionalidades: 5x o tamanho do grupo
+-Mínimo de funcionalidades: 5x o tamanho do grupo (20)
+
 -A variedade de técnicas empregadas será avaliada
 -A variedade do site será avaliada (animações, efeitos, formulários, etc.)
 -Originalidade e criatividade das soluções serão apreciadas

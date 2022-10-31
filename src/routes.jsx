@@ -6,16 +6,14 @@ import JDM from './pages/JDM/jdm';
 import ShitPosting from './pages/ShitPosting/shitPosting';
 import Agiotage from './pages/Agiotage/agiotage';
 
-import Container from './components/layout/container';
-
+import Container from './components/layout/container/container';
+import NavBar from './components/layout/navBar/navBar';
+import Footer from './components/layout/footer/footer'
 const Rotas = () => {
    return (
       <Router>
-         <Link to="/">HOME</Link>
-         <Link to="/jdm">JDM</Link>
-         <Link to="/agiotage">Agiotagem</Link>
-         <Link to="/shit-posting">Diversão</Link>
-         <Container>
+         <NavBar />
+         <Container customClass="min-height">
             <Routes>
                <Route exact path='/' element={<Menu />} />
                <Route path='/jdm' element={<JDM />} />
@@ -23,6 +21,7 @@ const Rotas = () => {
                <Route path='/agiotage' element={<Agiotage />} />
             </Routes>
          </Container>
+         <Footer />
       </Router>
    );
 }
