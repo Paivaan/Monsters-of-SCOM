@@ -10,8 +10,7 @@
     z-index: 0;
 
 }
-.teste{
-    background-image: url('../../images/agiota.jpg');
+.icones{
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -23,16 +22,44 @@
     animation: glow 1s ease-in-out infinite alternate;
     transition: all 0.5s ease;
 }
-.testePai{
-    height: 10vh;
-    width: 7vw;
+.icones:hover {
+    height: 110%;
+    width: 110%;
+    cursor: pointer;
+}
+
+#carro{
+    background-image: url('../../images/carro_icone.png');
+    border-radius: 25%;
+}
+.carroPai{
+    height: 11vh;
+    width: 5vw;
     top: 100vh;
     left: 30vw;
     position: absolute;
 }
-.teste:hover {
-    height: 110%;
-    width: 110%;
+
+#coringa{
+    background-image: url('../../images/agiota.jpg');
+}
+.coringaPai{
+    height: 10vh;
+    width: 7vw;
+    top: 90vh;
+    left: 90vw;
+    position: absolute;
+}
+
+#agiota{
+    background-image: url('../../images/agiota.jpg');
+}
+.agiotaPai{
+    height: 10vh;
+    width: 7vw;
+    top: 120vh;
+    left: 70vw;
+    position: absolute;
 }
 
 @keyframes glow {

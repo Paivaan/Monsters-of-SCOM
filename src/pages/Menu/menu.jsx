@@ -1,21 +1,37 @@
 import React, { useEffect, useState, useContext, li } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './menu.css';
-import city from '../../images/map_final.png';
-import teste from '../../images/silvia.jpg';
-
 
 function Menu() {
+
+   const navigate = useNavigate();
+
+   const carroNav = () => {
+      navigate("/jdm")
+   }
+   const coringaNav = () => {
+      navigate("/shit-posting")
+   }
+   const agiotaNav = () => {
+      navigate("/agiotage")
+   }
+
    return (
       <div>
-         <div className='testePai'>
-         <div className='teste' >
+         
+         <div className='carroPai'>
+         <div className='icones' id="carro" onClick={carroNav}></div>
+         </div>
 
+         <div className='coringaPai'>
+         <div className='icones' id="coringa" onClick={coringaNav}></div>
          </div>
-         </div>
-         <div className='City'>
 
+         <div className='agiotaPai'>
+         <div className='icones' id="agiota" onClick={agiotaNav}></div>
          </div>
+
+         <div className='City'></div>
       </div>
    );
 }
