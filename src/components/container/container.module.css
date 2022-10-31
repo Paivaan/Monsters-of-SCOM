@@ -5,6 +5,8 @@
    justify-content: space-around;
    margin: auto;
    flex-wrap: wrap;
+   background-color: aqua;
+   flex: 1;
 }
 
 .min-height {

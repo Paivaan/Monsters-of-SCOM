@@ -1,0 +1,17 @@
+.container {
+   width: '100%';
+   flex: 1;
+   display: flex;
+   justify-content: space-around;
+   margin: auto;
+   flex-wrap: wrap;
+<<<<<<< HEAD:src/components/container/container/container.module.css
+=======
+   background-color: aqua;
+   flex: 1;
+>>>>>>> Teste:src/components/container/container.module.css
+}
+
+.min-height {
+   min-height: '75%';
+}

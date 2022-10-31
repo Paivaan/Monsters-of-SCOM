@@ -6,9 +6,10 @@ import JDM from './pages/JDM/jdm';
 import ShitPosting from './pages/ShitPosting/shitPosting';
 import Agiotage from './pages/Agiotage/agiotage';
 
-import Container from './components/layout/container/container';
-import NavBar from './components/layout/navBar/navBar';
-import Footer from './components/layout/footer/footer'
+import Container from './components/container/container';
+import NavBar from './components/navBar/navBar';
+import Footer from './components/footer/footer';
+
 const Rotas = () => {
    return (
       <Router>
