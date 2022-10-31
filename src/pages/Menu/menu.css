@@ -1,14 +1,46 @@
 .City{
+    background-image: url('../../images/map_final.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex: 1 0 auto;
-};
+    z-index: 0;
+
+}
 .teste{
-    position: absolute;
-    height: 20vh;
-    width: 20vw;
-    top: 30vh;
+    background-image: url('../../images/agiota.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    transition: all 0.5s ease;
+}
+.testePai{
+    height: 10vh;
+    width: 7vw;
+    top: 100vh;
     left: 30vw;
+    position: absolute;
+}
+.teste:hover {
+    height: 110%;
+    width: 110%;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px transparent, 0 0 40px transparent, 0 0 50px transparent, 0 0 60px transparent, 0 0 70px transparent;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px transparent, 0 0 40px transparent, 0 0 50px transparent, 0 0 60px transparent, 0 0 70px transparent, 0 0 80px transparent;
+    }
 }
