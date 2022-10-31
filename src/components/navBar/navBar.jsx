@@ -1,9 +1,7 @@
 import styles from './navBar.module.css'
-
 import { Link } from 'react-router-dom';
-
 import Container from '../container/container';
-import agiota from '../../images/_imagens/agiota.jpg'
+import logo from '../../images/supra_navbar.png'
 
 
 function NavBar() {
@@ -11,7 +9,7 @@ function NavBar() {
    return (
       <nav className={styles.navBar}>
          <Container>
-            <Link to="/"><img src={agiota} alt="Home" /></Link>
+            <Link to="/"><img src={logo} alt="Home" /></Link>
             <ul className={styles.list}>
                <li className={styles.item}>
                   <Link to="/">Home</Link> 
@@ -23,7 +21,7 @@ function NavBar() {
                   <Link to="/agiotage">Agiotagem</Link>
                </li>
                <li className={styles.item}>
-                  <Link to="/shit-posting">Shit Posting</Link>
+                  <Link to="/shit-posting">ShitPosting</Link>
                </li>
             </ul>
          </Container>

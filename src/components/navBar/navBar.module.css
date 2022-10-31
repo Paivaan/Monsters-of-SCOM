@@ -1,9 +1,8 @@
 .navBar {
+   font-size: 1.5em;
    display: flex;
    justify-content: space-between;
    background-color: blueviolet;
-   padding: 1em;
-
 }
 
 .list {
@@ -13,12 +12,32 @@
 }
 
 .item {
-   margin-right: 1em;
+   margin-right: 100px;
 }
 .item a {
    color: white;
    text-decoration: none;
+	display: center;
+	padding: 3px 0 !important;
+	position: relative;
 }
-.item a:hover {
+
+.navBar img{
+   width: 150px;
+}
+
+.item a::after{
+   content: " ";
+   width: 0%;
+   height: 4px;
+   background-color: black;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.item a:hover::after {
    color: crimson;
+   width: 100%;
 }
