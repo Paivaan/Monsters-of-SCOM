@@ -10,7 +10,6 @@ function Menu() {
       <>
          <div>
             <img src={city} alt="City" />
-
             <div>
                <img src={teste} alt="teste" />
             </div>
