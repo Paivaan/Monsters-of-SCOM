@@ -11,12 +11,12 @@ function ShitPosting() {
 
       <section className= {styles.home_container}>
          <h1>Bem vindo a ala do <span>ShitPost!</span></h1>
-         <p> Vem coringar com a gente, patrão</p>
+         <b> Vem coringar com a gente, patrão</b>
          <img src={coringar} alt="Coringuei" />
-         <p>Agora veja esse magnífico cachorro pancinha</p>
+         <b>Agora veja esse magnífico cachorro pancinha</b>
          <img src={pancinha} alt="Pancinha" />
-         <p>Agora que você já se divertiu um pouco sua vez de colaborar com a firma!</p>
-         <p>Participe do nosso coletor de piadas e risadas!</p>
+         <b>Agora que você já se divertiu um pouco sua vez de colaborar com a firma!</b>
+         <b>Participe do nosso coletor de piadas e risadas!</b>
       </section>
       <div className= {styles.forms_container}>
          <h1>COLETOR DE PIADAS CORINGA-MASTER 2.0</h1>
