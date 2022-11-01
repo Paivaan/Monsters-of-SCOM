@@ -90,3 +90,6 @@
       min-height: 250px;
    }
 }
+.map {
+   height: 100vh;
+}
