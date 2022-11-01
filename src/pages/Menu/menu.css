@@ -35,30 +35,32 @@
 .carroPai{
     height: 11vh;
     width: 5vw;
-    top: 100vh;
+    top: 45vh;
     left: 30vw;
     position: absolute;
 }
 
 #coringa{
-    background-image: url('../../images/agiota.jpg');
+    background-image: url('../../images/card1.png');
+    border-radius: 25%;
 }
 .coringaPai{
-    height: 10vh;
-    width: 7vw;
-    top: 90vh;
-    left: 90vw;
+    height: 11vh;
+    width: 5vw;
+    top: 100vh;
+    left: 45vw;
     position: absolute;
 }
 
 #agiota{
-    background-image: url('../../images/agiota.jpg');
+    background-image: url('../../images/money.jpg');
+    border-radius: 25%;
 }
 .agiotaPai{
-    height: 10vh;
-    width: 7vw;
-    top: 120vh;
-    left: 70vw;
+    height: 11vh;
+    width: 5vw;
+    top: 70vh;
+    left: 80vw;
     position: absolute;
 }
 
