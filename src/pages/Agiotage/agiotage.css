@@ -34,7 +34,7 @@
 .containerInput input{
    background-color: transparent;
    border: 0;
-   font-size: 28px;
+   font-size: 18px;
    color: #fff;
    outline: none;
    margin-right: 8px;
@@ -44,7 +44,7 @@
    color: #fff
 }
 
-.buttonSearch{
+.buttonSearch {
    background-color: transparent;
    border: 0;
    display: flex;
@@ -56,4 +56,37 @@
 
 .buttonSearch:hover{
    transform: scale(1.2);
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #000;
+   width: 500px;
+   border-radius: 8px;
+}
+
+.main h2 {
+   margin: 16px 0;
+   font-size: 39px
+}
+
+.main span {
+   margin-bottom: 16px;
+   font-weight: bold;
+}
+
+@media (max-widith: 620px) {
+   .title{
+      font-size: 60px;
+   }
+   .main h2{
+      font-size: 28px;
+   }
+   .main{
+      width: 88%;
+      min-height: 250px;
+   }
 }
