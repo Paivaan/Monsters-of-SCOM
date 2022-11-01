@@ -1,4 +1,5 @@
-.container_agiotage{
+.container_agiotage {
+   padding-top: 200px;
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -8,21 +9,30 @@
    background: linear-gradient(#000, #f805bb);
    width: 100%;
 }
-.title{
+
+.title {
    font-size: 85px;
    color: #fff;
    animation: flipTitle 2s
-} 
+}
+
+.title2 {
+   margin-top: 20px;
+   font-size: 35px;
+   color: #fff;
+}
 
 @keyframes flipTitle {
    from {
       transform: rotateX(90deg);
-   } to {
+   }
+
+   to {
       transform: rotateX(0deg);
    }
 }
 
-.containerInput{
+.containerInput {
    background-color: rgba(255, 255, 255, 0.2);
    padding: 15 px;
    margin: 34px 0;
@@ -31,7 +41,7 @@
    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-.containerInput input{
+.containerInput input {
    background-color: transparent;
    border: 0;
    font-size: 18px;
@@ -40,7 +50,7 @@
    margin-right: 8px;
 }
 
-.containerInput input::placeholder{
+.containerInput input::placeholder {
    color: #fff
 }
 
@@ -54,7 +64,7 @@
    transition: transform 0.5s;
 }
 
-.buttonSearch:hover{
+.buttonSearch:hover {
    transform: scale(1.2);
 }
 
@@ -79,17 +89,30 @@
 }
 
 @media (max-widith: 620px) {
-   .title{
+   .title {
       font-size: 60px;
    }
-   .main h2{
+
+   .main h2 {
       font-size: 28px;
    }
-   .main{
+
+   .main {
       width: 88%;
       min-height: 250px;
    }
 }
+
 .map {
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: relative;
+   width: 100vw;
    height: 100vh;
+   display: flex;
+   flex: 1 0 auto;
+   z-index: 0;
+   padding-top: 20;
+   flex-direction: column;
+   align-items: center;
 }

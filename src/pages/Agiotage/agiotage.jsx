@@ -36,8 +36,19 @@ function Agiotage() {
    return (
       <div className='container_agiotage'>
          <h1 className='title'>
-            Procure seu Inadimplente:
+            Agiotagem
          </h1>
+         <div> 
+            <p>
+               Nessa página, você terá todos os recursos para conseguir seu dinheiro de volta! Cobre seu credor de uma forma amigável e efetiva!
+            </p>
+         </div>
+         <div style={{paddingTop: '50px'}}>
+
+         </div>
+         <h2 className='title2'>
+            Procure seu Inadimplente:
+         </h2>
          <div className='containerInput'>
             <input type="text" placeholder='Digite o CEP do malandro:' value={input} onChange={(e) => setInput(e.target.value)} />
             <button className='buttonCEP' onClick={handleSearch}>
@@ -55,21 +66,26 @@ function Agiotage() {
             </main>
          )}
 
-
+         <h2 className='title2'>
+            Procure no mapa!
+         </h2>
          <div className='map'>
             {isLoaded ? (
                <GoogleMap
-                  mapContainerStyle={{width: "80%", height: "80%"}}
+                  mapContainerStyle={{
+                     width: '70%',
+                     height: '40%'
+                  }}
                   center={{
                      lat: -23.479512611670835,
                      lng: -47.417083192319836
                   }}
                   zoom={15}
                >
-   
                </GoogleMap>
-            ): <></>}
+            ) : <></>}
          </div>
+
       </div>
    )
 };
