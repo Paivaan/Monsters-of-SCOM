@@ -11,7 +11,7 @@
 
 .home_container h1{
     font-size: 2.5em;
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
     margin-bottom: 1.5 em;
     color:black;
     box-shadow: 15px 0 0 0 white, -5px 0 0 0 white;
@@ -36,7 +36,8 @@
 }
 
 .home_container p{
-    margin-bottom: 1.5 em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     color:black;
     box-shadow: 15px 0 0 0 white, -5px 0 0 0 white;
 	background:white;
@@ -46,7 +47,29 @@
 }
 
 .home_container img{
-    border: 50px, rgb(122, 9, 122);
     width: 350px;
-    margin: 2em 0;
+    margin: 1em 0;
+}
+
+.forms_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    background-image: url(../../images/shitpost/fundo_formulario.jpg);
+}
+
+.forms_container h1{
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    margin-bottom: 1.5 em;
+    color:black;
+    box-shadow: 15px 0 0 0 purple, -5px 0 0 0 purple;
+	background:purple;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+
 }
