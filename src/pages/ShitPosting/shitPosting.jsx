@@ -23,7 +23,24 @@ function ShitPosting() {
          <Piadocas/>
       </div>
       
-      
+      <div class="top-bar">
+       <div class="container">
+           <div class="player-controls">
+               <span class="player-prev">Prev</span>
+               <span class="player-play">Play</span>
+               <span class="player-pause">Pause</span>
+               <span class="player-stop">Stop</span>
+               <span class="player-next">Next</span>
+           </div>
+           <div class="player"></div>
+           <div class="player-timeline">
+               <div class="player-timeline-control"></div>
+           </div>
+           <div class="player-display">
+               Playing: <span class="player-current-track"></span>
+           </div>
+       </div>
+   </div>
       
       </>
    );
