@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8/">
+    <title>STUTUTU</title>
+    <link rel="stylesheet" href="jdm.module.css" />
+
+    <script>
+        function PlaySound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.play();
+        }
+
+        function StopSound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = 0;
+        }
+    </script>
+
+
+</head>
+
+<body-jdm>
+    <div id="interface-jdm">
+
+        <div class="container">
+            <div class="box1">
+                <div class="textinho">SKYLINE</div>
+                <div class="imag1">
+                    <img src="_imagens/skyline.jpg" class="imgbox" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">
+                    <audio id='mySound' src='../SCOM-Project/_audios/skyline.ogg' preload="auto">
+
+                </div>
+            </div>
+            <div class="box2">
+                <div class="textinho">RX-7</div>
+                <div class="imag2">
+                    <img src="_imagens/rx7.jpg" class="imgbox" onmouseover="PlaySound('mySound3')"
+                        onmouseout="StopSound('mySound3')">
+                    <audio id='mySound3' src='../SCOM-Project/_audios/rx7.mp3' preload="auto">
+                </div>
+            </div>
+            <div class="box3">
+                <div class="textinho"><br>NISSAN SILVIA</div>
+                <div class="imag3">
+                    <img src="_imagens/silvia.jpg" class="imgbox" onmouseover="PlaySound('mySound2')"
+                        onmouseout="StopSound('mySound2')">
+                    <audio id='mySound2' src='../SCOM-Project/_audios/silvia.mp3' preload="auto">
+                </div>
+            </div>
+            <div class="box4">
+                <div class="textinho">SUBARU</div>
+                <div class="imag4">
+                    <img src="_imagens/subarus.jpg" class="imgbox" onmouseover="PlaySound('mySound4')"
+                        onmouseout="StopSound('mySound4')">
+                    <audio id='mySound4' src='../SCOM-Project/_audios/subaru.mp3' preload="auto">
+                </div>
+            </div>
+        </div>
+
+
+        <h2 id="vai-tremer"> <i> BRUP BRUP BRUP </i></h2>
+
+        <figure class="foto-legenda-jdm">
+            <img src="_imagens/supra s2.jpg" />
+            <figcaption>
+                <h4>is that... is that... is that a SUPRAAAAAAAAAAAA</h4>
+            </figcaption>
+        </figure>
+
+        <div align="center">
+            <h3>
+                "I wonder if you know<br>
+                How they live in Tokyo (はい!)<br>
+                If you seen it, then you mean it<br>
+                Then you know you have to go<br>
+                Fast and furious (drift, drift, drift)<br>
+                Fast and furious (drift, drift, drift)<br>
+                Wonder if you know<br>
+                How they live in Tokyo (はい!)<br>
+                If you seen it, then you mean it<br>
+                Then you know you have to go<br>
+                Fast and furious (drift, drift, drift)<br>
+                Fast and furious (drift, drift, drift)"<br>
+                <br>
+                BOYZ, Teriyaki
+            </h3>
+        </div>
+
+        <div align="center">
+            <iframe width="90%" height="400px" src="https://www.youtube.com/embed/6NImgmZKLfo?autoplay=1&mute=1">
+            </iframe>
+        </div>
+
+        <h4 style="text-align: center">Copyright&copy; 2022 - by André Paiva</h4>
+        <h4 style="text-align: center"><a href="https://www.facebook.com/andre.goncalves.357284"
+                target="_blank">Facebook</a> | <a href="https://www.instagram.com/_andrepaiva12/"
+                target="_blank">Instagram</a>
+        </h4>
+    </div>
+
+
+</body-jdm>
+
+</html>

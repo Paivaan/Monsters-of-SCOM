@@ -1,11 +1,69 @@
-import React, { useEffect, useState, useContext } from 'react';
-import './jdm.css';
+import React from 'react';
+import './jdm.module.css';
 
 function JDM() {
+
+   // function PlaySound(soundobj) {
+   //    var thissound = document.getElementById(soundobj);
+   //    thissound.play();
+   // }
+
+   // function StopSound(soundobj) {
+   //    var thissound = document.getElementById(soundobj);
+   //    thissound.pause();
+   //    thissound.currentTime = 0;
+   // }
+
    return (
-      <section>
-         <h1><span>stututu</span></h1>
-      </section>
+      <div>
+
+         <div id="body-jdm">
+            <div id="interface-jdm">
+
+               <div id="cabecalho">
+                  <div>
+                     <h1 style={{paddingTop: "50px", color: "#f805bb"}}>BEST JDM CARS</h1>
+                     <h2 style={{color: "#fff"}}>ESCOLHA O SEU E ESCUTE O RONCO!</h2>
+                  </div>
+
+               </div>
+
+               <div className="container">
+                  <div className="box1">
+                     <div className="textinho">SKYLINE</div>
+                     <div className="imag1">
+                        <img alt='q'src="_imagens/skyline.jpg" className="imgbox" />
+
+                     </div>
+                  </div>
+                  <div className="box2">
+                     <div className="textinho">RX-7</div>
+                     <div className="imag2">
+                        <img alt='2'src="_imagens/rx7.jpg" className="imgbox" />
+                     </div>
+                  </div>
+                  <div className="box3">
+                     <div className="textinho">NISSAN SILVIA</div>
+                     <div className="imag3">
+                        <img alt='3'src="_imagens/silvia.jpg" className="imgbox" />
+                     </div>
+                  </div>
+                  <div className="box4">
+                     <div className="textinho">SUBARU</div>
+                     <div className="imag4">
+                        <img alt='4'src="_imagens/subarus.jpg" className="imgbox" />
+                     </div>
+                  </div>
+               </div>
+
+
+               <h2 id="vai-tremer">BRUP BRUP BRUP</h2>
+
+            </div>
+
+         </div>
+
+      </div>
    );
 }
 export default JDM;
