@@ -14,12 +14,11 @@
     margin-bottom: 1.5em;
     margin-bottom: 1.5 em;
     color:black;
-    box-shadow: 15px 0 0 0 white, -5px 0 0 0 white;
+    box-shadow: 5px 0 0 0 white, -5px 0 0 0 white;
 	background:white;
 	display: inline;
 	padding: 3px 0 !important;
-	position: relative;
-
+	position: center;
 }
 
 .home_container h1 span{
@@ -28,22 +27,22 @@
     background-color:aqua;
     margin-bottom: 1.5 em;
     color:black;
-    box-shadow: 15px 0 0 0 white, -5px 0 0 0 white;
+    box-shadow: 5px 0 0 0 white, -5px 0 0 0 white;
 	background:white;
 	display: inline;
 	padding: 3px 0 !important;
 	position: relative;
 }
 
-.home_container p{
+.home_container b{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     color:black;
-    box-shadow: 15px 0 0 0 white, -5px 0 0 0 white;
+    box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
 	background:white;
 	display: inline;
-	padding: 3px 0 !important;
-	position: relative;
+	padding: 0px 0 !important;
+	position: center;
 }
 
 .home_container img{
@@ -66,7 +65,7 @@
     margin-bottom: 1.5em;
     margin-bottom: 1.5 em;
     color:black;
-    box-shadow: 15px 0 0 0 purple, -5px 0 0 0 purple;
+    box-shadow: 5px 0 0 0 purple, -5px 0 0 0 purple;
 	background:purple;
 	display: inline;
 	padding: 3px 0 !important;
