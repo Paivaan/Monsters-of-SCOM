@@ -1,26 +1,33 @@
+import Input from '../banco_piadoca/Input.js'
+import styles from './formulario.css'
+import Select from '../banco_piadoca/Select.js'
+import Submit from '../banco_piadoca/Submit.js'
+
 function Piadocas(){
     return(
-        <form>
-            
-            <div>
-                <input type = "text" placeholder = "Título da piadoca!"/>
-            </div>
-            
-            <div>
-                <input type = "text" placeholder = "Conte sua piadinha!"/>
-            </div>
-            
-            <div>
-                <select name = "category_id">
-                    <option disabled>Selecione o nível da piadoca!</option>
-                </select>
-            </div>
-            
-            <div>
-                <input type = "submit" value = "Enviar Piada!"/>
-            </div>
+        <form className = {styles.form}>
+            <Input 
+                type="text" 
+                text ="Título da piadoca" 
+                name ="name" 
+                placeholder = "Insira a piadoca"
+            />
+            <Input  
+                type="text" 
+                text ="Conte para nós sua piadoca:" 
+                name ="name" 
+                placeholder = "Historinha da piada"
+            />
+            <Select 
+                name = "category_id"
+                text = "Selecione o nível da piada"
+            /> 
+            <Submit
+                text = "Enviando piadoca!"
+            />
             
         </form>
+
     )
 }
 export default Piadocas
