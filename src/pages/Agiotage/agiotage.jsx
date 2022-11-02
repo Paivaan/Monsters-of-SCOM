@@ -1,9 +1,11 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, useRef } from 'react';
 import { BiSearchAlt } from "react-icons/bi";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 import './agiotage.css';
 import apiCEP from '../../services/axios';
+
+import cobrador1 from "../../images/cobrador0.jpg"
 
 
 function Agiotage() {
@@ -33,17 +35,42 @@ function Agiotage() {
       googleMapsApiKey: "AIzaSyDtw3t_uAryR2-jJj6V4UBSFKiyruCmRLk"
    })
 
+
+
+   const [data, setData] = useState([]);
+   const carousel = useRef(null);
+
+   useEffect(() => {
+      fetch('http://localhost:3000/static/shoes.json')
+         .then((response) => response.json())
+         .then(setData);
+   }, []);
+
+   const handleLeftClick = (e) => {
+      e.preventDefault();
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+   };
+
+   const handleRightClick = (e) => {
+      e.preventDefault();
+
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+   };
+
+   if (!data || !data.length) return null;
+
    return (
-      <div className='container_agiotage'>
+      <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
          <h1 className='title'>
             Agiotagem
          </h1>
-         <div> 
-            <p>
-               Nessa página, você terá todos os recursos para conseguir seu dinheiro de volta! Cobre seu credor de uma forma amigável e efetiva!
-            </p>
+         <div style={{paddingTop: "20px"}}>
+            <h4 style={{backgroundColor: "#fff", textAlign: 'center', paddingTop: "5px"}}>
+               Nessa página, você terá todos os recursos para conseguir seu dinheiro de volta!<br/>
+               Cobre seu credor de uma forma amigável, efetiva e sem sair de casa!
+            </h4>
          </div>
-         <div style={{paddingTop: '50px'}}>
+         <div style={{ paddingTop: '20px' }}>
 
          </div>
          <h2 className='title2'>
@@ -74,7 +101,7 @@ function Agiotage() {
                <GoogleMap
                   mapContainerStyle={{
                      width: '70%',
-                     height: '40%'
+                     height: '100%'
                   }}
                   center={{
                      lat: -23.479512611670835,
@@ -86,7 +113,62 @@ function Agiotage() {
             ) : <></>}
          </div>
 
-      </div>
+
+         <h2 className='title2'>
+            Selecione seu cobrador!
+         </h2>
+
+
+         <div className="container">
+            <div className="carousel" ref={carousel}>
+               {data.map((item) => {
+                  const { id, name, price, oldPrice, image } = item;
+                  return (
+                     <div className="item" key={id}>
+                        <div className="image">
+                           <img src={image} alt={name} />
+                        </div>
+                        <div className="info">
+                           <span className="name">{name}</span>
+                           <span className="oldPrice">U$ {oldPrice}</span>
+                           <span className="price">U$ {price}</span>
+                        </div>
+                     </div>
+                  );
+               })}
+            </div>
+            <div className="buttons">
+               <button onClick={handleLeftClick}>
+                  <img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Left" />
+               </button>
+               <button onClick={handleRightClick}>
+                  <img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Right" />
+               </button>
+            </div>
+         </div>
+
+      </div >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    )
 };
 
