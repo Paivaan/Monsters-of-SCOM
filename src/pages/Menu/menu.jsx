@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext, li } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './menu.css';
-import styles from '../ShitPosting/shitPosting.module.css';
 
 function Menu() {
    const navigate = useNavigate();
@@ -35,7 +34,7 @@ function Menu() {
          </div>
       </div>
       
-      <div className = {styles.home_container}>
+      <div className = "container">
    <p>O mundo atual necessita de mudanças, chega de guerras, desigualdades e atritos políticos
    Se este é problema, que foquemos no que é de nosso amor: Carros JDM, agiotagem e conteúdos non-sense.
    Uma pitada de roncos de poderosos motores, agiotas bolados e conteúdos sem sentido, afinal já dizia 

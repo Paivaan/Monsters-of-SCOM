@@ -3,6 +3,7 @@
    display: flex;
    justify-content: space-between;
    background-color: #f805bb;
+   height: 100px;
 }
 
 .list {
@@ -23,7 +24,7 @@
 }
 
 .navBar img{
-   width: 150px;
+   width: 100px;
 }
 
 .item a::after{

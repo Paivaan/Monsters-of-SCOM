@@ -1,10 +1,13 @@
-import React, { useEffect, useState, useContext } from 'react';
-import coringar from '../../images/shitpost/coringar.jpg'
+import React, { useEffect, useState, useContext } from 'react'
+
+import axios from '../../services/axiosTabela'
+
 import styles from './shitPosting.module.css'
+
+import coringar from '../../images/shitpost/coringar.jpg'
 import fundo from '../../images/shitpost/fundo_shitpost.jpg'
 import pancinha from '../../images/shitpost/cachorro_pancinha.png'
 import Piadocas from '../../components/piadocas/formulario.js'
-import axios from '../../services/axiosTabela';
 
 function ShitPosting() {
 
