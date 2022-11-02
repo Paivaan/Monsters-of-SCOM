@@ -1,0 +1,45 @@
+[
+  {
+    "id": "0",
+    "name": "Mikuro Asakura" ,
+    "description": "Ágil e Efetivo",
+    "image": "https://imgnike-a.akamaihd.net/900x900/011826BP.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Jorginho Âncora",
+    "description": "Discreto e persuasivo",
+    "image": "https://imgnike-a.akamaihd.net/900x900/022033ID.jpg"
+  },
+  
+  { 
+    "id": "2",
+    "name": "Irmãos Tanaka",
+    "description": "Intensos durante o diálogo",
+    "image": "https://imgnike-a.akamaihd.net/900x900/006900ID.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Valtinho da 12",
+    "description": "Muito influente na cidade",
+    "image": "https://imgnike-a.akamaihd.net/900x900/014648ID.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Matheus Costas",
+    "description": "Sósia do Channing Tatum",
+    "image": "https://imgnike-a.akamaihd.net/900x900/022236ID.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Alex",
+    "description": "Comunicação acertiva",
+    "image": "https://imgnike-a.akamaihd.net/900x900/022883ID.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Ronaldinho",
+    "description": "Poliglota",
+    "image": "https://imgnike-a.akamaihd.net/900x900/0117157T.jpg"
+  }
+]

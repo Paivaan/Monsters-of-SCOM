@@ -181,24 +181,17 @@ body {
  }
  
  .container .carousel .item .info .name {
-   font-size: 1.2rem;
+   font-size: 1.6rem;
    font-weight: bold;
    margin: 10px 0;
-   color: #00a8fb;
+   color: #f805bb;
  }
  
- .container .carousel .item .info .oldPrice {
-   font-size: 0.8rem;
-   text-decoration: line-through;
-   flex-grow: 1;
-   color: #e81a5d;
- }
- 
- .container .carousel .item .info .price {
-   margin-top: 10px;
-   font-size: 1.2rem;
+ .container .carousel .item .info .description {
+   margin-top: 5px;
+   font-size: 1rem;
    font-weight: bold;
-   background-color: #f805bb;
+   background-color: #f805bb32;
  }
  
  .container .buttons {
