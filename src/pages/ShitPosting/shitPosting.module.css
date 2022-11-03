@@ -21,19 +21,6 @@
 	position: center;
 }
 
-.home_container h1 span{
-    color: blueviolet;
-    padding: 0.2em;
-    background-color:aqua;
-    margin-bottom: 1.5 em;
-    color:black;
-    box-shadow: 5px 0 0 0 white, -5px 0 0 0 white;
-	background:white;
-	display: inline;
-	padding: 3px 0 !important;
-	position: relative;
-}
-
 .home_container b{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -71,4 +58,15 @@
 	padding: 3px 0 !important;
 	position: relative;
 
+}
+
+.piadas{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color:black;
+    box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
+	background:white;
+	display: inline;
+	padding: 1px 0 !important;
+	position: center;
 }

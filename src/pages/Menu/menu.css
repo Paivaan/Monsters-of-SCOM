@@ -73,3 +73,11 @@
         box-shadow: 0 0 20px #fff, 0 0 30px transparent, 0 0 40px transparent, 0 0 50px transparent, 0 0 60px transparent, 0 0 70px transparent, 0 0 80px transparent;
     }
 }
+
+.introducao {
+    text-align: center;
+    padding: 5em;
+    color:white;
+	padding: 2px 0 !important;
+	margin-bottom: 2em;
+}

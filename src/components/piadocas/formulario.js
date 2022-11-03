@@ -1,7 +1,4 @@
-import Input from '../banco_piadoca/Input.js'
-import styles from './formulario.css'
-import Select from '../banco_piadoca/Select.js'
-import Submit from '../banco_piadoca/Submit.js'
+import styles from './formulario.module.css'
 import React, {useState} from 'react'
 
 function Piadocas(props){
@@ -12,14 +9,15 @@ const [nivel, setNivel] = useState();
 
 
     return(
-        <div className = {styles.form} >
+        <div className = {styles.form_control}>
             <input 
                 type="text" 
                 text ="Título da piadoca" 
                 name ="name" 
-                placeholder = "Insira a piadoca"
+                placeholder = "Título da piadoca!"
                 onChange = {(event) => setTitulo(event.target.value)}
             />
+            <p>.</p>
             <input  
                 type="text" 
                 text ="Conte para nós sua piadoca:" 
@@ -27,6 +25,7 @@ const [nivel, setNivel] = useState();
                 placeholder = "Historinha da piada"
                 onChange = {(event) => setPiada(event.target.value)}
             />
+            <p>.</p>
             <select 
                 name = "category_id"
                 text = "Selecione o nível da piada"
@@ -38,17 +37,16 @@ const [nivel, setNivel] = useState();
                 <option value="Neutra">Neutra</option>
                 <option value="Ruim">Ruim</option>
                 <option value="Péssima">Péssima</option>
-            </select> 
+            </select>
+            <p>.</p> 
            <button onClick={() => props.startPost({
               "titulo": titulo,
               "piada": piada,
               "nivel": nivel,
            })}>
-           Enviando piadoca!
+           Enviar piadoca!
            </button>
-            
         </div>
-
     )
 }
 export default Piadocas

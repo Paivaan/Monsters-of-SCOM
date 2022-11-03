@@ -1,9 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react'
-
 import axios from '../../services/axiosTabela'
-
 import styles from './shitPosting.module.css'
-
 import coringar from '../../images/shitpost/coringar.jpg'
 import fundo from '../../images/shitpost/fundo_shitpost.jpg'
 import pancinha from '../../images/shitpost/cachorro_pancinha.png'
@@ -55,7 +52,7 @@ function ShitPosting() {
                 <Piadocas startPost={body => postPiada(body)}/>
             </div>
 
-            <div>
+            <div className= {styles.piadas}>
             {piadas && piadas.map(function (lista) {
                      return (
                         <div>
@@ -67,26 +64,6 @@ function ShitPosting() {
                   })
                   }
             </div>
-
-            <div class="top-bar">
-                <div class="container">
-                    <div class="player-controls">
-                        <span class="player-prev">Prev</span>
-                        <span class="player-play">Play</span>
-                        <span class="player-pause">Pause</span>
-                        <span class="player-stop">Stop</span>
-                        <span class="player-next">Next</span>
-                    </div>
-                    <div class="player"></div>
-                    <div class="player-timeline">
-                        <div class="player-timeline-control"></div>
-                    </div>
-                    <div class="player-display">
-                        Playing: <span class="player-current-track"></span>
-                    </div>
-                </div>
-            </div>
-
         </>
     );
 }
