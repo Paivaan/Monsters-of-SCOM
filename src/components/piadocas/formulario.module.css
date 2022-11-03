@@ -1,0 +1,39 @@
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_control input{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    line-height: 20px;
+}
+
+.form_control input::placeholder{
+    color: grey;
+}
+
+.form_control select{
+    padding: 0.7em;
+    border-radius: 0.5em;
+    border: none;
+    color: grey;
+}
+
+.form_control button{
+    background-color: white;
+    color: black;
+    padding: 0.7em 1.2em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+.form_control button:hover{
+    color: white;
+}
