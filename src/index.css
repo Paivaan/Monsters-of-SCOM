@@ -4,3 +4,14 @@
   font-family: 'Fira Code', monospace;
   box-sizing: border-box;
 }
+body
+{
+    background-image: url(../src/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
