@@ -6,7 +6,9 @@ import silvia from '../../images/silvia.jpg'
 import subarus from '../../images/subarus.jpg'
 
 import './jdm.module.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap'
+ 
 function JDM() {
 
    return (
@@ -46,9 +48,12 @@ function JDM() {
                         <img alt='4' src={subarus} />
                      </div>
                   </div>
-                  
+
                </div>
 
+               <div className="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/6NImgmZKLfo?autoplay=1&mute=1" title="YouTube video" allowFullScreen></iframe>
+               </div>
 
                <h2>BRUP BRUP BRUP</h2>
 
