@@ -10,7 +10,8 @@ import silviaSound from '../../audios/silvia.mp3'
 import skylineSound from '../../audios/skyline.mp3'
 import subaruSound from '../../audios/subaru.mp3'
 
-
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 import './jdm.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -66,31 +67,64 @@ function JDM() {
                </div>
 
                <div>
-                  <div>
-                     <div>SKYLINE</div>
+                  <CardGroup>
                      <div onMouseEnter={playSkyline} onMouseLeave={stopSkyline}>
-                        <img alt='q' src={skyline} />
-
+                        <Card  style={{ width: '13rem' }}>
+                           <Card.Img variant="top" src={skyline} />
+                           <Card.Body>
+                              <Card.Title>Skyline</Card.Title>
+                              <Card.Text>
+                                 Carro muito pika, tá? Quem não gosta é maluco!
+                              </Card.Text>
+                           </Card.Body>
+                           <Card.Footer>
+                              <small className="text-muted">As cold as ice</small>
+                           </Card.Footer>
+                        </Card>
                      </div>
-                  </div>
-                  <div>
-                     <div>RX-7</div>
                      <div onMouseEnter={playRx7} onMouseLeave={stopRx7}>
-                        <img alt='2' src={rx7} />
+                        <Card  style={{ width: '13rem' }}>
+                           <Card.Img variant="top" src={rx7} />
+                           <Card.Body>
+                              <Card.Title>RX-7</Card.Title>
+                              <Card.Text>
+                                 BRAP BRAP BRAP BRAP
+                              </Card.Text>
+                           </Card.Body>
+                           <Card.Footer>
+                              <small className="text-muted">Let's gap some lambos</small>
+                           </Card.Footer>
+                        </Card>
                      </div>
-                  </div>
-                  <div>
-                     <div>NISSAN SILVIA</div>
                      <div onMouseEnter={playSilvia} onMouseLeave={stopSilvia}>
-                        <img alt='3' src={silvia} />
+                        <Card  style={{ width: '13rem' }}>
+                           <Card.Img variant="top" src={silvia} />
+                           <Card.Body>
+                              <Card.Title>Silvia</Card.Title>
+                              <Card.Text>
+                                 Esse aqui nasceu pro drift
+                              </Card.Text>
+                           </Card.Body>
+                           <Card.Footer>
+                              <small className="text-muted">DK?</small>
+                           </Card.Footer>
+                        </Card>
                      </div>
-                  </div>
-                  <div>
-                     <div>SUBARU</div>
                      <div onMouseEnter={playSubaru} onMouseLeave={stopSubaru}>
-                        <img alt='4' src={subarus} />
+                        <Card  style={{ width: '13rem' }}>
+                           <Card.Img variant="top" src={subarus} />
+                           <Card.Body>
+                              <Card.Title>Subarus</Card.Title>
+                              <Card.Text>
+                                 Aguenta qualquer pista, foda-se
+                              </Card.Text>
+                           </Card.Body>
+                           <Card.Footer>
+                              <small className="text-muted">F imprenza</small>
+                           </Card.Footer>
+                        </Card>
                      </div>
-                  </div>
+                  </CardGroup>
 
                </div>
 
