@@ -64,9 +64,51 @@
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     color:black;
-    box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
-	background:white;
+    /* box-shadow: 10px 0 0 0 lightblue, -10px 0 0 0 lightblue;
+	background:lightblue; */
 	display: inline;
 	padding: 1px 0 !important;
 	position: center;
+    align-items: center;
+}
+
+.piadas h1{
+    color:black;
+
+	background:darkslateblue;
+	padding: 3px 0 !important;
+    display: flex;
+
+
+    justify-content: center;
+}
+
+.boxPiada{
+    background-color: gainsboro;
+    border-color: black;
+    border-style:inset;
+    border-radius: 10mm;
+    margin: 2%;
+    padding: 2%;
+
+}
+
+.tituloPiada{
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+
+.conteudoPiada{
+    font-size: 130%;
+    text-align: justify;
+    padding-bottom: 3%;
+}
+
+.nivelPiada{
+    font-size: 100%;
+    text-align: right;
+    padding-right: 1%;
 }

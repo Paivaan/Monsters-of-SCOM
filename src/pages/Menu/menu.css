@@ -35,7 +35,7 @@
 .carroPai{
     height: 11vh;
     width: 5vw;
-    top: 45vh;
+    top: 35vh;
     left: 30vw;
     position: absolute;
 }
@@ -47,7 +47,7 @@
 .coringaPai{
     height: 11vh;
     width: 5vw;
-    top: 100vh;
+    top: 85vh;
     left: 45vw;
     position: absolute;
 }
@@ -59,8 +59,8 @@
 .agiotaPai{
     height: 11vh;
     width: 5vw;
-    top: 70vh;
-    left: 80vw;
+    top: 45vh;
+    left: 75vw;
     position: absolute;
 }
 

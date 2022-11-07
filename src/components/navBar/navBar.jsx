@@ -15,13 +15,13 @@ function NavBar() {
                   <Link to="/">Home</Link> 
                </li>
                <li className={styles.item}>
-                  <Link to="/jdm">JDM</Link>
+                  <Link to="/jdm">Garagem JDM</Link>
                </li>
                <li className={styles.item}>
-                  <Link to="/agiotage">Agiotagem</Link>
+                  <Link to="/agiotage">Casa de Agiotagem</Link>
                </li>
                <li className={styles.item}>
-                  <Link to="/shit-posting">ShitPosting</Link>
+                  <Link to="/shit-posting">Beco do Coringa</Link>
                </li>
             </ul>
          </Container>
