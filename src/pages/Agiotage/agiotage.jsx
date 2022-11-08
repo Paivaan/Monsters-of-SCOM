@@ -69,6 +69,7 @@ function Agiotage() {
                 <p>O cobrador está a caminho do seu inadimplente em: <br />CEP: {cep.cep}<br />Complemento: {cep.complemento}<br />{cep.bairro}<br />{cep.localidade} - {cep.uf}</p>
             </Modal>}
          <h1 className='title'>
+            <br />
             Agiotagem
          </h1>
          <div style={{ paddingTop: "20px" }}>

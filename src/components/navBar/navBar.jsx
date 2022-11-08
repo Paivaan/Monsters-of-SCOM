@@ -9,7 +9,7 @@ function NavBar() {
    return (
       <nav className={styles.navBar}>
          <Container>
-            <Link to="/"><img src={logo} alt="Home" /></Link>
+            <Link to="/"><img src={logo} alt="Home" style={{width: "80%"}} /></Link>
             <ul className={styles.list}>
                <li className={styles.item}>
                   <Link to="/">Home</Link> 
