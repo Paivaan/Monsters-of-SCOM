@@ -26,6 +26,8 @@ function ShitPosting() {
     async function postPiada(body) {
         try {
            const respostasPost = await axios.post('/tabela', body)
+           alert("Piadoca Registrada!")
+           window.location.reload()
         } catch (err) {
            if (err?.response?.data.error) alert(err.response.data.error)
            else alert(err.message)

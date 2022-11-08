@@ -59,7 +59,7 @@ function JDM() {
             <div style={{ width: "900px", backgroundColor: "#212529", margin: "0px auto 10px auto", boxShadow: "0px 0px 10px #0a90d3", padding: "10px" }}>
                <div>
                   <div>
-                     <h1 style={{ paddingTop: "50px", color: "#f805bb" }}>Os melhores carros JDM da cidade!</h1>
+                     <h1 style={{ paddingTop: "50px", color: "#0a90d3" }}>Os melhores carros JDM da cidade!</h1>
                      <h2 style={{ color: "#fff" }}>ESCOLHA O SEU E ESCUTE O RONCO!</h2>
                   </div>
                </div>
