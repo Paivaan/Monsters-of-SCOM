@@ -43,7 +43,7 @@ function ShitPosting() {
 
             <section className={styles.home_container}>
                 <h1>Bem vindo ao Beco do Coringa</h1>
-                <b> Vem coringar com a gente, patrão</b>
+                <b> Vem <a href="https://www.dicionarioinformal.com.br/coringar/#:~:text=1.,Coringar&text=G%C3%ADria%2C%20usada%20por%20jovens%20que,e%20viol%C3%AAncia%20extrema%20parecem%20dissociados." target="_blank" rel="noreferrer">coringar</a> com a gente, patrão</b>
                 <img src={coringar} alt="Coringuei" />
                 <b>Agora veja esse magnífico cachorro pancinha</b>
                 <img src={pancinha} alt="Pancinha" />
