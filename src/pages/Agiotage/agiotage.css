@@ -9,7 +9,7 @@
    margin-top: 20px;
    font-size: 30px;
    color: #fff;
-   background-color: #f805bb93;
+   background-color: #0a90d393;
    border-radius: 8px;
 }
 
@@ -37,7 +37,7 @@
    display: flex;
    border-radius: 8px;
    
-   box-shadow: 1px 3px 8px #f805bb;
+   box-shadow: 1px 3px 8px #0a90d3;
 }
 
 .containerInput input {
@@ -62,9 +62,9 @@
    align-items: center;
    cursor: pointer;
    transition: transform 0.2s;
-   background-color: #f805bb;
+   background-color: #0a90d3;
    border-radius: 8;
-   box-shadow: 1px 3px 8px #f805bb;
+   box-shadow: 1px 3px 8px #0a90d3;
    margin-right: 8px;
    color: #fff;
 }
@@ -81,7 +81,7 @@
    background-color: #fff;
    width: 500px;
    border-radius: 8px;
-   box-shadow: 1px 3px 8px #f805bb;
+   box-shadow: 1px 3px 8px #0a90d3;
 }
 
 .main h2 {
@@ -155,7 +155,7 @@ body {
    width: 280px;
    border-radius: 16px;
    flex: none;
-   box-shadow: 1px 3px 8px #f805bb;
+   box-shadow: 1px 3px 8px #0a90d3;
  }
  
  .container .carousel .item .image img {
@@ -183,14 +183,14 @@ body {
    font-size: 1.6rem;
    font-weight: bold;
    margin: 10px 0;
-   color: #f805bb;
+   color: #0a90d3;
  }
  
  .container .carousel .item .info .description {
    margin-top: 5px;
    font-size: 1rem;
    font-weight: bold;
-   background-color: #f805bb32;
+   background-color: #0a90d332;
  }
  
  .container .buttons {

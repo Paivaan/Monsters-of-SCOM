@@ -16,8 +16,6 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import './jdm.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Container } from 'react-bootstrap'
-
 function JDM() {
 
    const ref1 = useRef()
@@ -58,10 +56,10 @@ function JDM() {
          <audio ref={ref3} src={skylineSound} />
          <audio ref={ref4} src={subaruSound} />
          <div>
-            <div style={{ width: "900px", backgroundColor: "#000", margin: "0px auto 10px auto", boxShadow: "0px 0px 10px rgb(248, 5, 187)", padding: "10px" }}>
+            <div style={{ width: "900px", backgroundColor: "#212529", margin: "0px auto 10px auto", boxShadow: "0px 0px 10px #0a90d3", padding: "10px" }}>
                <div>
                   <div>
-                     <h1 style={{ paddingTop: "50px", color: "#f805bb" }}>BEST JDM CARS</h1>
+                     <h1 style={{ paddingTop: "50px", color: "#0a90d3" }}>BEST JDM CARS</h1>
                      <h2 style={{ color: "#fff" }}>ESCOLHA O SEU E ESCUTE O RONCO!</h2>
                   </div>
                </div>
@@ -69,12 +67,12 @@ function JDM() {
                <div>
                   <CardGroup>
                      <div onMouseEnter={playSkyline} onMouseLeave={stopSkyline}>
-                        <Card  style={{ width: '13rem' }}>
+                        <Card text="white" bg="dark" border="primary" style={{ width: '25rem' }}>
                            <Card.Img variant="top" src={skyline} />
                            <Card.Body>
                               <Card.Title>Skyline</Card.Title>
                               <Card.Text>
-                                 Carro muito pika, tá? Quem não gosta é maluco!
+                                 Quem não gosta é maluco!
                               </Card.Text>
                            </Card.Body>
                            <Card.Footer>
@@ -83,7 +81,7 @@ function JDM() {
                         </Card>
                      </div>
                      <div onMouseEnter={playRx7} onMouseLeave={stopRx7}>
-                        <Card  style={{ width: '13rem' }}>
+                        <Card text="white" bg="dark" border="primary" style={{ width: '25rem' }}>
                            <Card.Img variant="top" src={rx7} />
                            <Card.Body>
                               <Card.Title>RX-7</Card.Title>
@@ -97,7 +95,7 @@ function JDM() {
                         </Card>
                      </div>
                      <div onMouseEnter={playSilvia} onMouseLeave={stopSilvia}>
-                        <Card  style={{ width: '13rem' }}>
+                        <Card text="white" bg="dark" border="primary" style={{ width: '25rem' }}>
                            <Card.Img variant="top" src={silvia} />
                            <Card.Body>
                               <Card.Title>Silvia</Card.Title>
@@ -111,7 +109,7 @@ function JDM() {
                         </Card>
                      </div>
                      <div onMouseEnter={playSubaru} onMouseLeave={stopSubaru}>
-                        <Card  style={{ width: '13rem' }}>
+                        <Card text="white" bg="dark" border="primary" style={{ width: '25rem' }}>
                            <Card.Img variant="top" src={subarus} />
                            <Card.Body>
                               <Card.Title>Subarus</Card.Title>
@@ -131,8 +129,6 @@ function JDM() {
                <div className="ratio ratio-16x9">
                   <iframe src="https://www.youtube.com/embed/6NImgmZKLfo?autoplay=1&mute=1" title="YouTube video" allowFullScreen></iframe>
                </div>
-
-               <h2>BRUP BRUP BRUP</h2>
 
             </div>
 
