@@ -3,6 +3,8 @@ import { BiSearchAlt, BiCaretRight, BiCaretLeft } from "react-icons/bi";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 import './agiotage.css';
+import Modal from '../../components/modal/modal'
+
 import apiCEP from '../../services/axios';
 
 
@@ -10,6 +12,7 @@ function Agiotage() {
 
    const [input, setInput] = useState("")
    const [cep, setCep] = useState({})
+   const [modal, setModal] = useState(false);
 
    async function handleSearch() {
       if (input === "") {
@@ -59,6 +62,12 @@ function Agiotage() {
 
    return (
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+         <Modal trigger={modal} setTrigger={setModal}>
+                <h3 style={{fontWeight: "bold"}}>
+                    Atenção:
+                </h3>
+                <p>O cobrador está a caminho do seu inadimplente!</p>
+            </Modal>
          <h1 className='title'>
             Agiotagem
          </h1>
@@ -66,7 +75,7 @@ function Agiotage() {
             <h4 style={{ backgroundColor: "#fff", textAlign: 'center', paddingTop: "5px" }}>
                Bem vindo à página da Casa de Agiotagem Pereira!<br/>
                Nessa página, você terá todos os recursos para conseguir seu dinheiro de volta!<br />
-               Cobre seu credor de uma forma amigável, efetiva e sem sair de casa!
+               Cobre seu inadimplente de uma forma amigável, efetiva e sem sair de casa!
             </h4>
          </div>
          <div style={{ paddingTop: '20px' }}>
@@ -130,6 +139,7 @@ function Agiotage() {
                         <div className="info">
                            <span className="name">{name}</span>
                            <span className="description">{description}</span>
+                           <button className='select' onClick={() => setModal(true)}>Selecionar</button>
                         </div>
                      </div>
                   );
@@ -146,27 +156,6 @@ function Agiotage() {
          </div>
 
       </div >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    )
 };
 

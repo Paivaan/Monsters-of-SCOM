@@ -192,6 +192,15 @@ body {
    font-weight: bold;
    background-color: #0a90d332;
  }
+ .container .carousel .item .info .select {
+   margin-top: 5px;
+   font-size: 1rem;
+   font-weight: bold;
+   background-color: #0a90d3;
+   border-radius: 16px;
+   border-color: transparent;
+   color: #fff;
+ }
  
  .container .buttons {
    width: 100%;
