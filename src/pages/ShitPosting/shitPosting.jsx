@@ -72,17 +72,17 @@ function ShitPosting() {
             setCase3(false)
             setModal(true)
             setCase4(true)
-        }, 20000);
+        }, 21000);
 
         setTimeout(() => {
             setCase4(false)
             setModal(true)
             setCase5(true)
-        }, 22000);
+        }, 24000);
 
         setTimeout(() => {
             setCase5(false)
-        }, 25000);
+        }, 27000);
 
     }, [])
 

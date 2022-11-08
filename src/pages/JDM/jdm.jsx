@@ -13,7 +13,6 @@ import subaruSound from '../../audios/subaru.mp3'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-import './jdm.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function JDM() {
@@ -130,7 +129,9 @@ function JDM() {
                   <iframe src="https://www.youtube.com/embed/6NImgmZKLfo?autoplay=1&mute=1" title="YouTube video" allowFullScreen></iframe>
                </div>
 
-               <h3>Todos os carros foram adquiridos de modo <s>ilegal</s> rápido, portanto a Garagem JDM não se responsabiliza por algo que possa acontecer após a aquisição.</h3>
+               <div style={{ color: "#555759" }}>
+                  <h3>Todos os carros foram adquiridos de modo <s>ilegal</s> rápido, portanto a Garagem JDM não se responsabiliza por algo que possa acontecer após a aquisição.</h3>
+               </div>
 
             </div>
 

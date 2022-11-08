@@ -62,12 +62,12 @@ function Agiotage() {
 
    return (
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-         <Modal trigger={modal} setTrigger={setModal}>
+         {<Modal trigger={modal} setTrigger={setModal}>
                 <h3 style={{fontWeight: "bold"}}>
                     Atenção:
                 </h3>
-                <p>O cobrador está a caminho do seu inadimplente!</p>
-            </Modal>
+                <p>O cobrador está a caminho do seu inadimplente em: <br />CEP: {cep.cep}<br />Complemento: {cep.complemento}<br />{cep.bairro}<br />{cep.localidade} - {cep.uf}</p>
+            </Modal>}
          <h1 className='title'>
             Agiotagem
          </h1>
@@ -139,7 +139,7 @@ function Agiotage() {
                         <div className="info">
                            <span className="name">{name}</span>
                            <span className="description">{description}</span>
-                           <button className='select' onClick={() => setModal(true)}>Selecionar</button>
+                           {Object.keys(cep).length > 0 && (<button className='select' onClick={() => setModal(true)}>Selecionar</button>)}
                         </div>
                      </div>
                   );
