@@ -64,6 +64,7 @@ function Agiotage() {
          </h1>
          <div style={{ paddingTop: "20px" }}>
             <h4 style={{ backgroundColor: "#fff", textAlign: 'center', paddingTop: "5px" }}>
+               Bem vindo à página da Casa de Agiotagem Pereira!<br/>
                Nessa página, você terá todos os recursos para conseguir seu dinheiro de volta!<br />
                Cobre seu credor de uma forma amigável, efetiva e sem sair de casa!
             </h4>

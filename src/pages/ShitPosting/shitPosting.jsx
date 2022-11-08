@@ -40,7 +40,7 @@ function ShitPosting() {
         <><div style={{ backgroundImage: `url(${fundo})` }}></div>
 
             <section className={styles.home_container}>
-                <h1>Bem vindo a ala do <span>ShitPost!</span></h1>
+                <h1>Bem vindo ao Beco do Coringa</h1>
                 <b> Vem coringar com a gente, patrão</b>
                 <img src={coringar} alt="Coringuei" />
                 <b>Agora veja esse magnífico cachorro pancinha</b>
@@ -54,12 +54,13 @@ function ShitPosting() {
             </div>
 
             <div className= {styles.piadas}>
+            <h1>Mural das piadocas</h1>
             {piadas && piadas.map(function (lista) {
                      return (
-                        <div>
-                            <h1>{lista.titulo}</h1>
-                            <h1>{lista.piada}</h1>
-                            <h1>{lista.nivel}</h1>
+                        <div className={styles.boxPiada}>
+                            <div className={styles.tituloPiada}>{lista.titulo}</div>
+                            <div className={styles.conteudoPiada}>{lista.piada}</div>
+                            <div className={styles.nivelPiada}>{lista.nivel}</div>
                         </div>
                      )
                   })
