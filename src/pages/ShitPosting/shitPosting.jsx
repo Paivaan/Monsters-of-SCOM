@@ -12,6 +12,7 @@ import add2 from '../../images/add_2.jpg'
 import add3 from '../../images/ad_3.jpeg'
 import add4 from '../../images/add_4.jpeg'
 import add5 from '../../images/add_5.jpg'
+import add6 from '../../images/add_6.jpg'
 
 import Modal from '../../components/modal/modal'
 
@@ -24,6 +25,7 @@ function ShitPosting() {
     const [case3, setCase3] = useState(false);
     const [case4, setCase4] = useState(false);
     const [case5, setCase5] = useState(false);
+    const [case6, setCase6] = useState(false);
 
     async function getPiadas() {
         try {
@@ -78,12 +80,18 @@ function ShitPosting() {
             setCase4(false)
             setModal(true)
             setCase5(true)
-        }, 24000);
+        }, 21000);
 
         setTimeout(() => {
             setCase5(false)
+            setModal(true)
+            setCase6(true)
+        }, 24000);
+        
+        setTimeout(() => {
+            setCase6(false)
         }, 27000);
-
+    
     }, [])
 
     return (
@@ -102,6 +110,9 @@ function ShitPosting() {
             </Modal>)}
             {case5 && (<Modal trigger={modal} setTrigger={setModal}>
                 <img src={add5} alt="add5" />
+            </Modal>)}
+            {case6 && (<Modal trigger={modal} setTrigger={setModal}>
+                <img src={add6} alt="add6" />
             </Modal>)}
             <section className={styles.home_container}>
                 <h1>Bem vindo ao Beco do Coringa</h1>
