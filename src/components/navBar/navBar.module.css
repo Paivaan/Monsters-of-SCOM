@@ -4,6 +4,7 @@
    justify-content: space-between;
    background-color: #0a90d3;
    height: 100px;
+   padding-top: 10px;
 }
 
 .list {
@@ -31,7 +32,7 @@
    content: " ";
    width: 0%;
    height: 4px;
-   background-color: #fff;
+   background-color: #0a90d3;
    position: absolute;
    bottom: 0;
    left: 0;
@@ -39,6 +40,6 @@
 }
 
 .item a:hover::after {
-   color: crimson;
+   background-color: #fff;
    width: 100%;
 }
