@@ -1,12 +1,11 @@
-import styles from './footer.module.css'
-import { BiPlay, BiPause } from "react-icons/bi";
+import React, { useEffect, useRef, useState } from 'react'
 
+import styles from './footer.module.css'
+import { BiPlay, BiPause, BiSkipNext } from "react-icons/bi";
 
 import mafia1 from './audiosFooter/The Godfather Theme Song.mp3'
 import mafia2 from './audiosFooter/Il Padrino ( The Godfather  original song ).mp3'
 import mafia3 from './audiosFooter/Coolio - Gangstas Paradise - Karaoke Version from Zoom Karaoke.mp3'
-import { useRef, useState } from 'react'
-import { useEffect } from 'react'
 
 function Footer() {
 
@@ -16,34 +15,36 @@ function Footer() {
 
    const [playerText, setPlayerText] = useState('Play');
    var i = 0
-   const [teste, setTeste] = useState();
+   const [control, setControl] = useState(0);
+   const [stopPlaying, setstopPlaying] = useState(false);
+
 
    function player() {
-      
-      if (i == 0) {
+
+      if (control == 0) {
          ref1.current.play()
          setPlayerText('Pause')
       }
-      if (i == 1) {
+      if (control == 1) {
          ref2.current.play()
          setPlayerText('Pause')
       }
-      if (i == 2) {
+      if (control == 2) {
          ref3.current.play()
          setPlayerText('Pause')
       }
    }
 
    function pauser() {
-      if (i == 0) {
+      if (control == 0) {
          ref1.current.pause()
          setPlayerText('Play')
       }
-      if (i == 1) {
+      if (control == 1) {
          ref2.current.pause()
          setPlayerText('Play')
       }
-      if (i == 2) {
+      if (control == 2) {
          ref3.current.pause()
          setPlayerText('Play')
       }
@@ -52,6 +53,7 @@ function Footer() {
 
    function skip() {
       i++
+      setControl(i)
       if (i == 1) {
          ref1.current.pause()
          setPlayerText('Play')
@@ -63,13 +65,7 @@ function Footer() {
          setPlayerText('Play')
          ref3.current.play()
          setPlayerText('Pause')
-      }
-      if (i == 3) {
-         ref3.current.pause()
-         setPlayerText('Play')
-         ref1.current.play()
-         setPlayerText('Pause')
-         i = 0
+         setstopPlaying(true)
       }
    }
 
@@ -86,17 +82,17 @@ function Footer() {
                <audio ref={ref1} src={mafia1} />
                <audio ref={ref2} src={mafia2} />
                <audio ref={ref3} src={mafia3} />
-               {playerText} {playerText == "Play" ? <BiPlay size={20} style={{ verticalAlign: 'top' }} /> : <BiPause size={20} style={{ verticalAlign: 'top' }} />}
+               {playerText} <BiPlay size={20} style={{ verticalAlign: 'top' }} />
             </button> :
                <button className={styles.player} onClick={pauser}>
                   <audio ref={ref1} src={mafia1} />
                   <audio ref={ref2} src={mafia2} />
                   <audio ref={ref3} src={mafia3} />
-                  {playerText} {playerText == "Play" ? <BiPlay size={20} style={{ verticalAlign: 'top' }} /> : <BiPause size={20} style={{ verticalAlign: 'top' }} />}
+                  {playerText} <BiPause size={20} style={{ verticalAlign: 'top' }} />
                </button>}
-            <button className={styles.player} onClick={skip}>
-               skip
-            </button>
+            {stopPlaying === false ? <button className={styles.skip} onClick={skip}>
+               <BiSkipNext size={20} style={{ verticalAlign: 'top' }} />
+            </button> : <></>}
 
          </div>
 
