@@ -64,18 +64,18 @@ function JDM() {
                </div>
 
                <div>
-                  <CardGroup>
+                  <CardGroup style={{ alignContent: 'center', justifyContent: 'center', alignItems: 'center', margin: '30px' }}>
                      <div onMouseEnter={playSkyline} onMouseLeave={stopSkyline}>
                         <Card text="white" bg="dark" border="primary" style={{ width: '25rem' }}>
                            <Card.Img variant="top" src={skyline} />
                            <Card.Body>
                               <Card.Title>Skyline</Card.Title>
                               <Card.Text>
-                                 Quem não gosta é maluco!
+                                 Você viu o novo camaro?<br />Porque esse não vê desde a segunda.
                               </Card.Text>
                            </Card.Body>
                            <Card.Footer>
-                              <small className="text-muted">As cold as ice</small>
+                              <small className="text-muted">STUTUTU</small>
                            </Card.Footer>
                         </Card>
                      </div>
@@ -85,11 +85,11 @@ function JDM() {
                            <Card.Body>
                               <Card.Title>RX-7</Card.Title>
                               <Card.Text>
-                                 BRAP BRAP BRAP BRAP
+                                 Você pode ter 99 problemas, mas falta de barulho não vai ser um.
                               </Card.Text>
                            </Card.Body>
                            <Card.Footer>
-                              <small className="text-muted">Let's gap some lambos</small>
+                              <small className="text-muted">BRAP BRAP BRAP BRAP</small>
                            </Card.Footer>
                         </Card>
                      </div>
@@ -113,11 +113,11 @@ function JDM() {
                            <Card.Body>
                               <Card.Title>Subarus</Card.Title>
                               <Card.Text>
-                                 Aguenta qualquer pista, foda-se
+                                 Aguenta qualquer pista
                               </Card.Text>
                            </Card.Body>
                            <Card.Footer>
-                              <small className="text-muted">F imprenza</small>
+                              <small className="text-muted">R.I.P. 1993 - 2023</small>
                            </Card.Footer>
                         </Card>
                      </div>
@@ -125,12 +125,16 @@ function JDM() {
 
                </div>
 
+               <p></p>
+
                <div className="ratio ratio-16x9">
                   <iframe src="https://www.youtube.com/embed/6NImgmZKLfo?autoplay=1&mute=1" title="YouTube video" allowFullScreen></iframe>
                </div>
 
+               <p></p>
+
                <div style={{ color: "#555759" }}>
-                  <h3>Todos os carros foram adquiridos de modo <s>ilegal</s> rápido, portanto a Garagem JDM não se responsabiliza por algo que possa acontecer após a aquisição.</h3>
+                  <p style={{ textAlign: 'center' }}>Todos os carros foram adquiridos de modo <s>ilegal</s> rápido, portanto a Garagem JDM não se responsabiliza por algo que possa acontecer após a aquisição.</p>
                </div>
 
             </div>

@@ -16,7 +16,7 @@ function Agiotage() {
 
    async function handleSearch() {
       if (input === "") {
-         alert("Me ajude a te ajudar, preencha algum CEP!")
+         alert("Me ajuda a te ajudar, preencha algum CEP!")
          return;
       }
 

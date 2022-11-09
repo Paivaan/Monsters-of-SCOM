@@ -39,14 +39,14 @@ function Menu() {
       
       <div className = "container">
 
-   <p className= 'introducao' >O mundo atual necessita de mudanças, chega de guerras, desigualdades e atritos políticos
+   <h4 className= 'introducao' >O mundo atual necessita de mudanças, chega de guerras, desigualdades e atritos políticos
    Se este é problema, que foquemos no que é de nosso amor: Carros JDM, agiotagem e conteúdos non-sense.
    Uma pitada de roncos de poderosos motores, agiotas bolados e conteúdos sem sentido, afinal já dizia 
-   Nietzche:</p>
+   Nietzche:</h4>
    <p></p>
-   <h2 className= 'introducao'>Aquilo que se faz por amor está sempre além do bem e do mal.</h2>
+   <h3 className= 'introducao'>Aquilo que se faz por amor está sempre além do bem e do mal.</h3>
    <p></p>
-   <h1 className= 'introducao'>Sendo assim, vos apresento o nosso mundo ideal.</h1>
+   <h2 className= 'introducao'>Sendo assim, vos apresento o nosso mundo ideal.</h2>
    </div>
    </>
    );

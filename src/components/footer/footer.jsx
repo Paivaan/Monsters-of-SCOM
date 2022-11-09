@@ -16,6 +16,7 @@ function Footer() {
 
    const [playerText, setPlayerText] = useState('Play');
    var i = 0
+   const [teste, setTeste] = useState();
 
    function player() {
       
@@ -93,7 +94,7 @@ function Footer() {
                   <audio ref={ref3} src={mafia3} />
                   {playerText} {playerText == "Play" ? <BiPlay size={20} style={{ verticalAlign: 'top' }} /> : <BiPause size={20} style={{ verticalAlign: 'top' }} />}
                </button>}
-            <button onClick={skip}>
+            <button className={styles.player} onClick={skip}>
                skip
             </button>
 
