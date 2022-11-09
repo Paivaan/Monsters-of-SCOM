@@ -14,24 +14,63 @@ function Footer() {
    const ref2 = useRef()
    const ref3 = useRef()
 
-
    const [playerText, setPlayerText] = useState('Play');
-   var condicao = 0;
-
+   var i = 0
 
    function player() {
-      if (condicao == 0) {
+      
+      if (i == 0) {
          ref1.current.play()
          setPlayerText('Pause')
-         condicao++;
-      } else {
+      }
+      if (i == 1) {
+         ref2.current.play()
+         setPlayerText('Pause')
+      }
+      if (i == 2) {
+         ref3.current.play()
+         setPlayerText('Pause')
+      }
+   }
+
+   function pauser() {
+      if (i == 0) {
          ref1.current.pause()
+         setPlayerText('Play')
+      }
+      if (i == 1) {
+         ref2.current.pause()
+         setPlayerText('Play')
+      }
+      if (i == 2) {
+         ref3.current.pause()
          setPlayerText('Play')
       }
 
    }
 
-
+   function skip() {
+      i++
+      if (i == 1) {
+         ref1.current.pause()
+         setPlayerText('Play')
+         ref2.current.play()
+         setPlayerText('Pause')
+      }
+      if (i == 2) {
+         ref2.current.pause()
+         setPlayerText('Play')
+         ref3.current.play()
+         setPlayerText('Pause')
+      }
+      if (i == 3) {
+         ref3.current.pause()
+         setPlayerText('Play')
+         ref1.current.play()
+         setPlayerText('Pause')
+         i = 0
+      }
+   }
 
    return (
       <div className={styles.footer}>
@@ -42,11 +81,20 @@ function Footer() {
             <div>
                - Soren Kierkegaard
             </div>
-            <button className={styles.player} onClick={player}>
+            {playerText == "Play" ? <button className={styles.player} onClick={player}>
                <audio ref={ref1} src={mafia1} />
                <audio ref={ref2} src={mafia2} />
                <audio ref={ref3} src={mafia3} />
-               {playerText} {playerText == "Play" ? <BiPlay size={20} style={{verticalAlign: 'top'}} />:<BiPause size={20} style={{verticalAlign: 'top'}}/>}
+               {playerText} {playerText == "Play" ? <BiPlay size={20} style={{ verticalAlign: 'top' }} /> : <BiPause size={20} style={{ verticalAlign: 'top' }} />}
+            </button> :
+               <button className={styles.player} onClick={pauser}>
+                  <audio ref={ref1} src={mafia1} />
+                  <audio ref={ref2} src={mafia2} />
+                  <audio ref={ref3} src={mafia3} />
+                  {playerText} {playerText == "Play" ? <BiPlay size={20} style={{ verticalAlign: 'top' }} /> : <BiPause size={20} style={{ verticalAlign: 'top' }} />}
+               </button>}
+            <button onClick={skip}>
+               skip
             </button>
 
          </div>
