@@ -1,5 +1,5 @@
 import React from 'react';
-import Rotas from './routes';
+import Rotas from './routes/app.routes';
 
 const App = () => <Rotas />;
 

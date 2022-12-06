@@ -9,10 +9,10 @@ function NavBar() {
    return (
       <nav className={styles.navBar}>
          <Container>
-            <Link to="/"><img src={logo} alt="Home" style={{width: "75%", paddingBlockEnd: "5px"}} /></Link>
+            <Link to="/menu"><img src={logo} alt="Home" style={{width: "75%", paddingBlockEnd: "5px"}} /></Link>
             <ul className={styles.list}>
                <li className={styles.item}>
-                  <Link to="/">Home</Link> 
+                  <Link to="/menu">Home</Link> 
                </li>
                <li className={styles.item}>
                   <Link to="/jdm">Garagem JDM</Link>
