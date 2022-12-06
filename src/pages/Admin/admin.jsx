@@ -18,7 +18,7 @@ function Admin() {
             padding: "2em"
 
          }}>
-            <div style={{flex: "1", width: "80vw", height: "90vh"}}>
+            <div style={{flex: "1", width: "75vw", height: "85vh"}}>
                <div className="ratio ratio-16x9">
                   <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" title="YouTube video" allowFullScreen></iframe>
                </div>
