@@ -11,15 +11,7 @@ function LogIn() {
    const [user, setUser] = useState("");
    const [password, setPassword] = useState();
 
-   const SignIn = () => {
-      navigate("/signin")
-   }
-
-   async function login() {
-      if (!user || !password) alert("ME AJUDA AE NÉ PAE")
-   }
-
-   async function setUserPassword(body) {
+   async function login(body) {
       setUser(body.user)
       setPassword(body.password)
    }
@@ -36,11 +28,11 @@ function LogIn() {
             padding: "2em"
 
          }}>
-            
+
             <h1 style={{ color: "#fff", backgroundColor: "#0a90d393", marginBottom: "15px" }}>Faça seu login</h1>
-            
-            <Login startPost={body => setUserPassword(body)} />
-         
+
+            <Login startPost={body => login(body)} />
+
          </div>
 
       </div>
