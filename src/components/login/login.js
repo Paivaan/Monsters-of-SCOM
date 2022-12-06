@@ -85,7 +85,7 @@ function Login(props) {
 			/>
 			<p>.</p>
 			<input
-				type="text"
+				type="password"
 				text="Senha"
 				name="password"
 				placeholder="Senha"
