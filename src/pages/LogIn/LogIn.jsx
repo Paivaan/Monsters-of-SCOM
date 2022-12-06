@@ -7,8 +7,15 @@ function LogIn() {
 
    const navigate = useNavigate();
 
+   const [user, setUser] = useState("");
+   const [password, setPassword] = useState();
+
    const SignIn = () => {
       navigate("/signin")
+   }
+
+   async function login() {
+      if (!user || !password) alert("ME AJUDA AE NÉ PAE")
    }
 
    return (
