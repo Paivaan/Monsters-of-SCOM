@@ -1,21 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import LogIn from "../pages/LogIn/LogIn";
-import Landing from "../pages/LandingPage/landing";
+import SignIn from "../pages/SignIn/SignIn";
 
-import { BrowserRouter as Router, Routes, Route, Redirect, Link } from 'react-router-dom';
+
+import Container from '../components/container/container';
 
 const AuthRotas = () => {
    return (
       <Router>
-         <NavBar />
          <Container customClass="min-height">
             <Routes>
-               <Route exact path='/' element={<Landing />} />
-               <Route exact path='/login' element={<LogIn />} />
+               <Route exact path='/' element={<LogIn />} />
+               <Route path="/signin" element={<SignIn />} />
             </Routes>
          </Container>
-         <Footer />
       </Router>
    );
 }

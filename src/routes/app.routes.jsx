@@ -16,7 +16,7 @@ const Rotas = () => {
          <NavBar />
          <Container customClass="min-height">
             <Routes>
-               <Route exact path='/menu' element={<Menu />} />
+               <Route exact path='/' element={<Menu />} />
                <Route path='/jdm' element={<JDM />} />
                <Route path='/shit-posting' element={<ShitPosting />} />
                <Route path='/agiotage' element={<Agiotage />} />

@@ -1,6 +1,15 @@
-import React from 'react';
-import Rotas from './routes/app.routes';
+import React, { useState } from 'react';
+import AllRotas from './routes'
 
-const App = () => <Rotas />;
+import { SignedConxtext } from './contexts/SignedContext';
 
-export default App;
+
+export default function App() {
+   const [signed, setSigned] = useState(false);
+
+   return (
+      <SignedConxtext.Provider value={{ signed, setSigned}}>
+         <AllRotas />
+      </SignedConxtext.Provider>
+   )
+};
