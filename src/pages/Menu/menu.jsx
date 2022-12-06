@@ -17,6 +17,9 @@ function Menu() {
    const agiotaNav = () => {
       navigate("/agiotage")
    }
+   const adminNav = () => {
+      navigate("/admin")
+   }
    return (
       <><div>
 
@@ -30,6 +33,10 @@ function Menu() {
 
          <div className='agiotaPai'>
             <div className='icones' id="agiota" onClick={agiotaNav}></div>
+         </div>
+
+         <div className='adminPai'>
+            <div className='icones' id="admin" onClick={adminNav}></div>
          </div>
 
          <div 
