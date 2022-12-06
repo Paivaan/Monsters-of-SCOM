@@ -2,11 +2,15 @@ import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { SignedConxtext } from '../../contexts/SignedContext';
 import axios from '../../services/axiosTabela';
+import ScaleLoader from "react-spinners/ScaleLoader";
+
 
 function Login(props) {
 
 	const [user, setUser] = useState();
 	const [password, setPassword] = useState();
+	const [loading, setLoading] = useState(false);
+
 	const { setSigned } = useContext(SignedConxtext);
 
 	const navigate = useNavigate();
@@ -16,10 +20,19 @@ function Login(props) {
 	}
 
 	async function PostLogIn(body) {
-		const data = await axios.post('/users', body)
-		if (data) {
-			return data
-		}
+		// const data = await axios.post('/users', body)
+	}
+
+	if (loading) {
+		return (
+			<div style={{ flex: 1, justifyContent: 'center', alignItems: 'center', paddingTop: '30px' }}>
+				<ScaleLoader
+					color={"#fff"}
+					loading={loading}
+					size={500}
+				/>
+			</div>
+		)
 	}
 
 	async function LogIn() {
@@ -31,10 +44,15 @@ function Login(props) {
 				senha: password
 			}
 			try {
+				setLoading(true)
+
 				// const user = await axios.postLogin(body)
 				// const stringfyUser = JSON.stringify(user)
 				// await localStorage.setItem("user", stringfyUser)
-				setSigned(true)
+				setTimeout(() => {
+					setSigned(true)
+					setLoading(false)
+				}, 1000);
 				localStorage.setItem("chave", true)
 			}
 			catch (err) {
