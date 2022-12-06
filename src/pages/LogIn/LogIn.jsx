@@ -22,17 +22,27 @@ function LogIn() {
    async function setUserPassword(body) {
       setUser(body.user)
       setPassword(body.password)
-  }
+   }
 
    return (
 
       <div>
-         <div className={styles.forms_container}>
-            <h1 >Faça seu login</h1>
-            <Login startPost={body => setUserPassword(body)}/>
+         <div style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "2em"
+
+         }}>
+            
+            <h1 style={{ color: "#fff", backgroundColor: "#0a90d393", marginBottom: "15px" }}>Faça seu login</h1>
+            
+            <Login startPost={body => setUserPassword(body)} />
+         
          </div>
 
-         <button onClick={SignIn}>Clica aqui meu chapa!</button>
       </div>
 
    )
