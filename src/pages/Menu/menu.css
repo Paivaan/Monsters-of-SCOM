@@ -64,6 +64,18 @@
     position: absolute;
 }
 
+#admin{
+    background-image: url('../../images/admin_icon.png');
+    border-radius: 25%;
+}
+.adminPai{
+    height: 11vh;
+    width: 5vw;
+    top: 88vh;
+    left: 15vw;
+    position: absolute;
+}
+
 @keyframes glow {
     from {
         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px transparent, 0 0 40px transparent, 0 0 50px transparent, 0 0 60px transparent, 0 0 70px transparent;

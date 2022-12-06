@@ -9,6 +9,7 @@ import Agiotage from '../pages/Agiotage/agiotage';
 import Container from '../components/container/container';
 import NavBar from '../components/navBar/navBar';
 import Footer from '../components/footer/footer';
+import Admin from '../pages/Admin/admin';
 
 const Rotas = () => {
    return (
@@ -20,6 +21,7 @@ const Rotas = () => {
                <Route path='/jdm' element={<JDM />} />
                <Route path='/shit-posting' element={<ShitPosting />} />
                <Route path='/agiotage' element={<Agiotage />} />
+               <Route path='/admin' element={<Admin />} />
             </Routes>
          </Container>
          <Footer />
