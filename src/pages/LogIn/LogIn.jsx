@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/nav-icon.png'
-import './LogIn.css'
+import styles from './LogIn.css'
+import Login from '../../components/login/login.js'
 
 function LogIn() {
 
@@ -18,12 +19,22 @@ function LogIn() {
       if (!user || !password) alert("ME AJUDA AE NÉ PAE")
    }
 
+   async function setUserPassword(body) {
+      setUser(body.user)
+      setPassword(body.password)
+  }
+
    return (
 
       <div>
+         <div className={styles.forms_container}>
+            <h1 >Faça seu login</h1>
+            <Login startPost={body => setUserPassword(body)}/>
+         </div>
+
          <button onClick={SignIn}>Clica aqui meu chapa!</button>
       </div>
-   
+
    )
 }
 
