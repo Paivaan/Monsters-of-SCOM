@@ -35,6 +35,7 @@ function Login(props) {
 				// const stringfyUser = JSON.stringify(user)
 				// await localStorage.setItem("user", stringfyUser)
 				setSigned(true)
+				localStorage.setItem("chave", true)
 			}
 			catch (err) {
 				if (err.response.data) alert(err.response.data.error)
