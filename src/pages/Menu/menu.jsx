@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useContext, li } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { getCLS } from 'web-vitals';
 import './menu.css';
 
 
 
 function Menu() {
-   
+
    const navigate = useNavigate();
+   const [user, setUser] = useState("");
 
    const carroNav = () => {
       navigate("/jdm")
@@ -20,6 +22,17 @@ function Menu() {
    const adminNav = () => {
       navigate("/admin")
    }
+
+   function getCLS() {
+      const userPost = JSON.parse(localStorage.getItem("userPost"))
+      if (userPost)
+         setUser(userPost.usuario)
+   }
+
+   useEffect(() => {
+      getCLS()
+   }, []);
+
    return (
       <><div>
 
@@ -39,23 +52,23 @@ function Menu() {
             <div className='icones' id="admin" onClick={adminNav}></div>
          </div>
 
-         <div 
+         <div
             className='City'>
          </div>
       </div>
-      
-      <div className = "container">
 
-   <h4 className= 'introducao' >O mundo atual necessita de mudanças, chega de guerras, desigualdades e atritos políticos
-   Se este é problema, que foquemos no que é de nosso amor: Carros JDM, agiotagem e conteúdos non-sense.
-   Uma pitada de roncos de poderosos motores, agiotas bolados e conteúdos sem sentido, afinal já dizia 
-   Nietzche:</h4>
-   <p></p>
-   <h3 className= 'introducao'>Aquilo que se faz por amor está sempre além do bem e do mal.</h3>
-   <p></p>
-   <h2 className= 'introducao'>Sendo assim, vos apresento o nosso mundo ideal.</h2>
-   </div>
-   </>
+         <div className="container">
+
+            <h4 className='introducao' >O mundo atual necessita de mudanças, chega de guerras, desigualdades e atritos políticos
+               Se este é problema, que foquemos no que é de nosso amor: Carros JDM, agiotagem e conteúdos non-sense.
+               Uma pitada de roncos de poderosos motores, agiotas bolados e conteúdos sem sentido, afinal já dizia
+               Nietzche:</h4>
+            <p></p>
+            <h3 className='introducao'>Aquilo que se faz por amor está sempre além do bem e do mal.</h3>
+            <p></p>
+            <h2 className='introducao'>Sendo assim, {user}, lhe apresento o nosso mundo ideal.</h2>
+         </div>
+      </>
    );
 }
 export default Menu;
