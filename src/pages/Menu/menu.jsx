@@ -9,6 +9,7 @@ function Menu() {
 
    const navigate = useNavigate();
    const [user, setUser] = useState("");
+   const [cargo, setCargo] = useState("");
 
    const carroNav = () => {
       navigate("/jdm")
@@ -25,8 +26,10 @@ function Menu() {
 
    function getCLS() {
       const userPost = JSON.parse(localStorage.getItem("userPost"))
-      if (userPost)
+      if (userPost) {
          setUser(userPost.usuario)
+         setCargo(userPost.cargo)
+      }
    }
 
    useEffect(() => {
@@ -48,9 +51,9 @@ function Menu() {
             <div className='icones' id="agiota" onClick={agiotaNav}></div>
          </div>
 
-         <div className='adminPai'>
+         {cargo === "admin" ? <div className='adminPai'>
             <div className='icones' id="admin" onClick={adminNav}></div>
-         </div>
+         </div> : null}
 
          <div
             className='City'>
