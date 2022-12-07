@@ -14,9 +14,15 @@ export default function App() {
       if (chave)
          setSigned(chave)
    }
+   function getDelet() {
+      const rip = JSON.parse(localStorage.getItem("rip"))
+      if(rip)
+         setDelet(true)
+   }
 
    useEffect(() => {
       getSigned()
+      getDelet()
    }, []);
 
    return (
