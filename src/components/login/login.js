@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { SignedConxtext } from '../../contexts/SignedContext';
-import axios from '../../services/axiosTabela';
+import axios from '../../services/axiosAuth';
 import ScaleLoader from "react-spinners/ScaleLoader";
+import userAuth from '../../services/axiosAuth';
 
 
 function Login(props) {
@@ -19,9 +20,6 @@ function Login(props) {
 		navigate("/signin")
 	}
 
-	async function PostLogIn(body) {
-		// const data = await axios.post('/users', body)
-	}
 
 	if (loading) {
 		return (
@@ -46,18 +44,24 @@ function Login(props) {
 			try {
 				setLoading(true)
 
-				// const user = await axios.postLogin(body)
-				// const stringfyUser = JSON.stringify(user)
-				// await localStorage.setItem("user", stringfyUser)
-				setTimeout(() => {
-					setSigned(true)
-					setLoading(false)
-				}, 1000);
+				const userPost = await userAuth.postLogIn(body)
+				const userString = JSON.stringify(userPost)
+				await localStorage.setItem("userPost", userString)
+
+				setSigned(true)
 				localStorage.setItem("chave", true)
+
+				setLoading(false)
 			}
-			catch (err) {
-				if (err.response.data) alert(err.response.data.error)
-				else alert(err.message)
+			catch (e) {
+				if (e.response.data) {
+					setLoading(false)
+					alert(e.response.data.error)
+				}
+				else {
+					setLoading(false)
+					alert(e.message)
+				}
 			}
 		}
 	}
