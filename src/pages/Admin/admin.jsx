@@ -33,7 +33,7 @@ function Admin() {
 
             <h1 className='introducao'>Bem-vindo a tela dos admnis</h1>
             <h5 className='introducao'>A vida é um grande jogo de xadrez, mova a rainha de forma equivocada e perderá o jogo. Andamos numa corda bamba entre a vida e a morte, entre o certo e o errado, entre ser aplaudido e vaiado. Nessa seção, ignore tudo isso. Quebre a banca, derrube a mesa e os pilares da moral.</h5>
-            <h4 className='introducao'>Nessa tela você você irá dar um fim a este site pífio!</h4>
+            <h4 className='introducao'>Nessa tela você você irá dar um fim a esse site pífio!</h4>
             <h4 className='introducao'>Não hesite, tudo é uma cópia, da cópia da cópia.</h4>
             <h4 className='introducao'>Só depois de perdermos tudo, é que estamos livres para fazer qualquer coisa.</h4>
      
