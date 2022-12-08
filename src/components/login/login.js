@@ -53,14 +53,16 @@ function Login(props) {
 
 				setLoading(false)
 			}
-			catch (e) {
-				if (e.response.data) {
+			catch (err) {
+				if (err.response.data) {
 					setLoading(false)
-					alert(e.response.data.error)
+					alert(err.response.data.error)
+					console.log('err.response.data.error :>> ', err.response.data.err);
 				}
 				else {
 					setLoading(false)
-					alert(e.message)
+					alert(err.message)
+					console.log('e.message :>> ', err.message);
 				}
 			}
 		}
